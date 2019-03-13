@@ -1,24 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ScrollingModule } from '@angular/cdk/scrolling';
 
-import { AppRoutingModule } from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BasicScrollComponent } from './basic-scroll/basic-scroll.component';
-import { InfiniteScrollComponent } from './infinite-scroll/infinite-scroll.component';
+
+import { FormsModule } from '@angular/forms';
+import { MatTabsModule, MatListModule,  MatToolbarModule,MatIconModule, MatButtonModule, MatSidenavModule, MatCheckboxModule, MatMenuModule  } from '@angular/material';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicScrollComponent,
-    InfiniteScrollComponent
+    routingComponents,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScrollingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    FormsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatListModule,
+    MatTabsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
