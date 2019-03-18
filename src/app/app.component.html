@@ -13,33 +13,20 @@
 
 
   <div class="sidenav-content">
-    <mat-toolbar class="mat-toolbar" color="primary">
+    <mat-toolbar class="mat-elevation-z11" >
       <mat-toolbar-row>
-        <button mat-icon-button (click)="drawer.toggle()">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <span class="spacer">Beepi</span>
+        <span class="spacer" > 
+          <button class ="menu-button" mat-button routerLink="/home" > Home</button>
+          <button class ="menu-button" mat-button routerLink="/partners">Our Partners</button>
+          <button class ="menu-button" mat-button routerLink="/aboutus">About Us</button>
+          <button class ="menu-button" mat-button routerLink="/products">Products</button>
+        </span>
+        <div style="margin-right:5px;color:white"  >Beepi</div>
         
-        <img class = "pikalogo" src = "assets\img\images.png" >
-        <mat-icon>favorite</mat-icon>
-        <button mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>
-            <mat-icon>publish</mat-icon>
-            <span>Share</span>
-          </button>
-          <button mat-menu-item disabled>
-            <mat-icon>mode_comment</mat-icon>
-            <span>Comment</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon>delete</mat-icon>
-            <span>Delete</span>
-          </button>
+        <img class = "pikalogo" routerLink= "/home" src = "assets\img\images.png" >
+        
 
-        </mat-menu>
+     
       </mat-toolbar-row>
     </mat-toolbar>
     <router-outlet></router-outlet>
