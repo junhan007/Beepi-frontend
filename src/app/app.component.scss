@@ -7,62 +7,58 @@
   left: 0;
   right: 0;
 }
-.pikalogo{
-  width:40px;
-  height:40px;
+.pikalogo {
+  width: 40px;
+  height: 40px;
   align-content: left;
 }
 
-.mat-raised-button{
-  background-color:rgb(124, 49, 49);
+.mat-raised-button {
+  background-color: rgb(124, 49, 49);
 }
 
-.drawer-content{
-  position:absolute;
-  top:40%;
+.drawer-content {
+  position: absolute;
+  top: 40%;
 }
 
-.sidenav{
+.sidenav {
   flex: 1 0 auto;
   position: absolute;
-  background-color: #ffffff; 
-  border-right: solid 2px #6f0a83a6; 
-  
+  background-color: #ffffff;
+  border-right: solid 2px #6f0a83a6;
 }
 
-mat-toolbar{
-  min-height: 50px !important; 
+mat-toolbar {
+  min-height: 50px !important;
   height: 30px !important;
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:-1; 
-  background-color:rgb(124, 49, 49);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(124, 49, 49);
 }
 .container .mat-drawer {
- 
-  
-  min-width:200px;
+  min-width: 200px;
 }
 
-
-.container .mat-drawer .mat-button{
-  display:block;
-  width:200px;
+.container .mat-drawer .mat-button {
+  display: block;
+  width: 200px;
   text-align: left;
 }
 
-
-.spacer{
+.spacer {
   flex: 1 1 auto;
+  background-color: rgb(124, 49, 49);
 }
 
-.menu-button{
-  color:white;
+.menu-button {
+  color: white;
 }
 
-.menu-button:hover{
+.menu-button:hover {
   background-color: white;
-  color:rgb(124, 49, 49);
+  color: rgb(124, 49, 49);
 }
