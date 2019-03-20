@@ -36,7 +36,7 @@ mat-toolbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
   background-color: rgb(124, 49, 49);
 }
 .container .mat-drawer {
@@ -52,13 +52,36 @@ mat-toolbar {
 .spacer {
   flex: 1 1 auto;
   background-color: rgb(124, 49, 49);
+  color:white;
 }
 
-.menu-button {
-  color: white;
+
+.mat-menu{
+  background-color:rgb(124, 49, 49);
+}
+.MenuButton{
+  width:100px;
+  background-color:rgb(124, 49, 49);
+  text-align:center;
+  padding:0px;
 }
 
-.menu-button:hover {
+.mat-button:hover {
   background-color: white;
   color: rgb(124, 49, 49);
 }
+
+
+button.mat-menu-item{
+  background-color:  rgb(135, 49, 49);
+  color:white;
+  line-height: 30px;
+  height: 30px;
+  margin:0;
+}
+
+button.mat-menu-item:hover{
+  background-color: white;
+  color: rgb(124, 49, 49);
+}
+
