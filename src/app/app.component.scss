@@ -64,6 +64,9 @@ mat-toolbar {
   background-color:rgb(124, 49, 49);
   text-align:center;
   padding:0px;
+  margin:0px;
+  align-content:center;
+  min-width:100px;
 }
 
 .mat-button:hover {
@@ -74,7 +77,7 @@ mat-toolbar {
 
 button.mat-menu-item{
   background-color:  rgb(135, 49, 49);
-  color:white;
+  color:white;  
   line-height: 30px;
   height: 30px;
   margin:0;

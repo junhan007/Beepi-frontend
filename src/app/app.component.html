@@ -17,11 +17,11 @@
       <mat-toolbar-row>
         <span class="spacer">
           <button mat-button class="MenuButton" routerLink="/home"> Home</button>
-          <button mat-button class="MenuButton" [matMenuTriggerFor]="Friendsdropdown"> Our Friends</button>
-          <mat-menu #Friendsdropdown="matMenu" >
-              <button  mat-menu-item> Partners </button>
-              <button mat-menu-item> Supported By </button>
-              <button mat-menu-item> Endosements </button>
+          <button mat-button class="MenuButton" [matMenuTriggerFor]="Friendsdropdown">Our Friends<mat-icon style= "width:15%">arrow_drop_down</mat-icon></button>
+          <mat-menu #Friendsdropdown="matMenu">
+            <button mat-menu-item routerLink="/partners"> Partners </button>
+            <button mat-menu-item routerLink="/supportedby"> Supported By </button>
+            <button mat-menu-item routerLink="/endosements"> Endosements </button>
           </mat-menu>
           <button mat-button class="MenuButton" routerLink="/aboutus">About Us</button>
           <button mat-button class="MenuButton" routerLink="/products">Products</button>

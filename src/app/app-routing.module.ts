@@ -4,6 +4,8 @@ import  { TeamDescriptionComponent } from './about-us/team-description/team-desc
 import  { PartnersListComponent } from './partners/partners-list/partners-list.component';
 import  { ProductListComponent } from './products/product-list/product-list.component';
 import { IntroComponent } from './home/intro/intro.component';
+import {SupportedComponent} from './partners/supported/supported.component';
+import {EndosementsComponent} from './partners/endosements/endosements.component';
 
 
 
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path: 'products', component: ProductListComponent},
   {path: 'partners', component: PartnersListComponent},
   {path: 'home', component : IntroComponent},
+  {path: 'supportedby', component : SupportedComponent},
+  {path: 'endosements', component : EndosementsComponent},
   {path: '**' , redirectTo: 'home' , pathMatch:'full' }
 ];
 
@@ -21,4 +25,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents= [TeamDescriptionComponent , ProductListComponent, PartnersListComponent, IntroComponent]
+export const routingComponents= [TeamDescriptionComponent , ProductListComponent, PartnersListComponent, IntroComponent, SupportedComponent,EndosementsComponent]

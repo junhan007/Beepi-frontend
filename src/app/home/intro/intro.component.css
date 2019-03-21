@@ -1,8 +1,29 @@
-.homepage{
-    background-image:url(src\assets\img\article_cover_photo.jpg);
-    height:38em; background-size:cover; width:100%;
-    background-blend-mode: darken;
-    opacity: 0.4;
- 
+#homepage{
+    margin:0px;
+    background-image:url(src\assets\img\Article_cover-1.jpg);
+    background-size:cover; width:100%; height:38em;
+    background-size:1200px
 
+
+}
+
+#homelogo{
+    position:absolute;
+    text-align:left;
+    padding-left:15%;
+    font-size:30px;
+    margin-top:0px;
+    padding-top:5em;
+    color:white;
+    margin-bottom:0px;
+
+}
+
+.homebody{
+    margin-top:0px;
+    background-color: #fcefe3;
+  
+}
+p , h1 ,div {
+    margin-top:0px;
 }
