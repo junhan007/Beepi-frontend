@@ -1,34 +1,16 @@
-<mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side">
-    <div style="background-color:blue">
-      <img src="assets\img\images.png">
-    </div>
-    <div class="drawer-content">
-      <button color="primary" mat-button routerLink="/home"> Home</button>
-      <button color="primary" mat-button routerLink="/partners">Our Partners</button>
-      <button color="primary" mat-button routerLink="/aboutus">About Us</button>
-      <button color="primary" mat-button routerLink="/products">Products</button>
-    </div>
-  </mat-drawer>
-
-
-  <div>
-    <mat-toolbar class="mat-elevation-z9">
-      <mat-toolbar-row>
-        <span class="spacer">
-          <button mat-button class="MenuButton" routerLink="/home"> Home</button>
-          <button mat-button class="MenuButton" [matMenuTriggerFor]="Friendsdropdown">Our Friends<mat-icon style= "width:15%">arrow_drop_down</mat-icon></button>
-          <mat-menu #Friendsdropdown="matMenu">
-            <button mat-menu-item routerLink="/partners"> Partners </button>
-            <button mat-menu-item routerLink="/supportedby"> Supported By </button>
-            <button mat-menu-item routerLink="/endosements"> Endosements </button>
-          </mat-menu>
-          <button mat-button class="MenuButton" routerLink="/aboutus">About Us</button>
-          <button mat-button class="MenuButton" routerLink="/products">Products</button>
-        </span>
-        <div style="margin-right:5px;color:white">Beepi</div>
-        <img class="pikalogo" routerLink="/home" src="assets\img\images.png">
-      </mat-toolbar-row>
-    </mat-toolbar>
-    <router-outlet></router-outlet>
-  </div>
+<div>
+  <mat-toolbar class="mat-elevation-z9">
+    <mat-toolbar-row>
+      <span class="Menuspacer">
+        <button mat-button class="MenuButton" routerLink="/home"> Sign Up</button>
+        <button mat-button class="MenuButton" routerLink="/aboutus">About Us</button>
+        <button mat-button class="MenuButton" routerLink="/products">Products</button>
+        <button mat-button class="MenuButton" routerLink="/partners">Our Partners</button>
+        <button mat-button class="MenuButton">Contact Us</button>
+      </span>
+      <button mat-button class="MenuButton">Beepi </button>
+      <img class="pikalogo" routerLink="/home" src="assets\img\images.png">
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>

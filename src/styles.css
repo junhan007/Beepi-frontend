@@ -1,12 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+html, body {
+  height: 100%;
+}
 
+body {
+  margin: 0;
+  font-family: 'proxima-nova', sans-serif;
+}
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+Header {
+  font-family: 'Museo Sans', sans-serif;
+}
 
 .mat-menu-panel {
-    min-width: 35px;
-    background-color:rgb(135, 20, 49);
-  }
+  min-width: 35px;
+  background-color: rgb(135, 20, 49);
+}
