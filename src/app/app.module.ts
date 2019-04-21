@@ -1,23 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AppRoutingModule, routingComponents } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppRoutingModule, routingComponents } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
-import { FormsModule } from '@angular/forms';
-import { MatTabsModule, MatListModule,  MatToolbarModule,MatIconModule, MatButtonModule, MatSidenavModule, MatCheckboxModule, MatMenuModule  } from '@angular/material';
-
-
-
-
+import { FormsModule } from "@angular/forms";
+import {
+  MatCardModule,
+  MatTabsModule,
+  MatListModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatCheckboxModule,
+  MatMenuModule,
+  MatInputModule
+} from "@angular/material";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    routingComponents,
-
-  ],
+  declarations: [AppComponent, routingComponents],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,10 +34,12 @@ import { MatTabsModule, MatListModule,  MatToolbarModule,MatIconModule, MatButto
     MatIconModule,
     MatToolbarModule,
     MatListModule,
-    MatTabsModule
-
+    MatTabsModule,
+    MatCardModule,
+    MatInputModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

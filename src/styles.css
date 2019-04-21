@@ -1,20 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
-html, body {
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html,
+body {
   height: 100%;
 }
 
 body {
   margin: 0;
-  font-family: 'proxima-nova', sans-serif;
+  font-family: "proxima-nova", sans-serif;
 }
 
-Header {
-  font-family: 'Museo Sans', sans-serif;
+header {
+  font-family: "Museo Sans", sans-serif;
 }
 
 .mat-menu-panel {
   min-width: 35px;
   background-color: rgb(135, 20, 49);
+}
+
+.mat-form-field-label {
+  color: black !important;
+}
+
+.mat-form-field-underline {
+  background-color: black !important;
+}
+.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #7c4131 !important;
+}
+
+/*mat-card-outline-focused-borderColor*/
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #7c4131 !important;
+}
+/*mat-card outline border color*/
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #7c4131;
+}
+
+/*mat-card input font color*/
+input.mat-input-element {
+  color: black;
 }

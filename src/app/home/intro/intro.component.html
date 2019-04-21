@@ -1,34 +1,53 @@
-<div id=homepage>
-    <div id=homelogo>
-        <H1>Beepi</H1>
-        <button mat-button class="MenuButton" routerLink="/home"> Sign Up</button>
-        <button mat-button class="MenuButton" routerLink="/home"> Log In</button>
-    </div>
-
+<div id="homepage">
+  <div class="homelogo ">
+    <mat-card class="mat-elevation-z11" [style.minHeight]="'350px'">
+      <mat-card-content>
+        <form class="loginform">
+          <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Username" />
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input required matInput placeholder="Password" />
+          </mat-form-field>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>Login</button>
+        <button mat-button>Register</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
 
 <body class="bodyflex">
-    <div class="flexitem1">
-        <h1> <span class=red>Allowing you </span> to be there
-            for your <span class=red> loved ones </span> , whenever</h1>
-        <p>Retirement should be rewarding instead of a punishment. Our seniors have sacrificed their freedom so as to
-            not create
-            additional burdens to
-            their children. Our product will allow seniors to get out of their homes, integrate back into their
-            community & gives a
-            peace of mind knowing
-            that they are in good hands.
-            "Beepi" aims to create a fun and acceptive society by alleviating the mental stress from our beneficiaries.
-            "Beepi" QR
-            token will enable our
-            beneficiary to travel light and forget the forgotten worries.sequi nesciunt. Neque porro quisquam est, qui
-            dolorem
-            ipsum quia dolor sit amet,
-            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-            aliquam quaerat
-            voluptatem.</p>
-    </div>
-    <div class="flexitem2">
-    </div>
-
+  <div class="flexitem1">
+    <h1>
+      <span class="red">Allowing you </span> to be there for your
+      <span class="red"> loved ones </span> , whenever
+    </h1>
+    <p>
+      Retirement should be rewarding instead of a punishment. Our seniors have
+      sacrificed their freedom so as to not create additional burdens to their
+      children. Our product will allow seniors to get out of their homes,
+      integrate back into their community & gives a peace of mind knowing that
+      they are in good hands.
+    </p>
+    <p>
+      "Beepi" aims to create a fun and acceptive society by alleviating the
+      mental stress from our beneficiaries. "Beepi" QR token will enable our
+      beneficiary to travel light and forget the forgotten worries.
+    </p>
+  </div>
+  <div class="flexitem2">
+    <h1>Check out our Instagram!</h1>
+    <iframe
+      src="https://www.juicer.io/api/feeds/beepi-sg/iframe"
+      frameborder="0"
+      width="1100"
+      height="600"
+      style="display:block;margin:0 auto;"
+    ></iframe>
+  </div>
 </body>

@@ -1,21 +1,38 @@
 #homepage {
   margin: 0px;
-  background-image: url(src\assets\img\20502.jpg);
+  background-image: url(src\assets\img\Home1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 40em;
+  height: 37em;
+  opacity: 10%;
 }
 
-#homelogo {
+.homelogo {
   position: absolute;
-  text-align: left;
-  padding-left: 15%;
-  font-size: 30px;
-  margin-top: 0px;
-  padding-top: 5em;
-  color: white;
-  margin-bottom: 0px;
+  padding-top: 6em;
+  color: #f6f6f6;
+  padding-left: 70%;
+}
+
+.loginform mat-form-field {
+  width: 100%;
+}
+
+mat-card mat-card-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+mat-card {
+  background-image: url(src\assets\img\BeepiCardBg.jpg);
+  background-size: cover;
+}
+
+.loginform mat-card-actions button {
+  width: 100%;
+  display: flex;
 }
 
 .MenuButton {
@@ -28,32 +45,36 @@
   min-width: 150px;
   font-size: 20px;
 }
-
 .bodyflex {
-  display: flex;
   margin-top: 0px;
+}
+.flexitem1 {
   background-color: #f6f6f6;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.flexitem1 {
-  text-align: left;
   padding-top: 150px;
-  width: 70%;
   font-size: 30px;
-  margin-bottom: 40px;
+  height: 17em;
 }
-
-.flexitem2 {
-  padding-top: 30px;
-  width: 75%;
-  text-align: left;
+div.flexitem1 h1 {
+  font-size: 45px;
+  width: 70%;
+}
+div.flexitem1 p {
   font-size: 20px;
-  margin-bottom: 40px;
+  width: 70%;
 }
-
+.flexitem2 {
+  padding-top: 50px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #525252;
+  color: white;
+}
 .red {
   color: red;
 }

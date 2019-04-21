@@ -2,15 +2,23 @@
   <mat-toolbar class="mat-elevation-z9">
     <mat-toolbar-row>
       <span class="Menuspacer">
-        <button mat-button class="MenuButton" routerLink="/home"> Sign Up</button>
-        <button mat-button class="MenuButton" routerLink="/aboutus">About Us</button>
-        <button mat-button class="MenuButton" routerLink="/products">Products</button>
-        <button mat-button class="MenuButton" routerLink="/partners">Our Partners</button>
+        <button mat-button class="MenuButton" routerLink="/home">
+          Sign Up
+        </button>
+        <button mat-button class="MenuButton" routerLink="/aboutus">
+          About Us
+        </button>
+        <button mat-button class="MenuButton" routerLink="/products">
+          Products
+        </button>
+        <button mat-button class="MenuButton" routerLink="/partners">
+          Our Partners
+        </button>
         <button mat-button class="MenuButton">Contact Us</button>
       </span>
-      <button mat-button class="MenuButton">Beepi </button>
-      <img class="pikalogo" routerLink="/home" src="assets\img\images.png">
+      <button mat-button class="MenuButton">Beepi</button>
+      <img class="pikalogo" routerLink="/home" src="assets\img\BeepiLogo.jpg" />
     </mat-toolbar-row>
   </mat-toolbar>
-  <router-outlet></router-outlet>
+  <div class="routerdisplay"><router-outlet></router-outlet></div>
 </div>
